@@ -1,0 +1,62 @@
+<head>
+<title>registration page</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+
+
+
+</head>
+<form action="action_page.php">
+  <div class="container">
+    <button type="submit" class="registerbtn">sign in</button>
+   
+    <hr>
+
+    
+    <input type="text" placeholder="mail@example.com" name="email" id="email" required>
+
+    
+    <input type="password" placeholder="Password" name="psw" id="psw" required>
+
+    <input type="number" placeholder="enter mobile number" name="phno" id="phno" required>
+    
+    <input type="date" placeholder="enter date of birth" name="date" id="date" required>
+    
+    <button type="submit" onclick="function" class="registerbtn">sign in</button>
+  
+
+  
+    <p>Forgot your password? <a href="#">register</a>.</p>
+  
+</form>
+<hr>
+<br>
+<br>
+<button type="submit" class="fbtn">f</button>
+<br>
+<button type="submit" class="gbtn">g</button>
+<br>
+<button type="submit" class="ebtn">EPAM LOGIN</button>
+</div>
+<script>
+function function(inputtxt)
+{
+  var phoneno = /^\d{10}$/;
+  
+  if((inputtxt.value.match(phoneno))
+        {
+      return true;
+        }
+      else
+        {
+        alert("message");
+        return false;
+        }
+	if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))
+  {
+    return (true)
+  }
+    alert("You have entered an invalid email address!")
+    return (false)
+}
+</script>
